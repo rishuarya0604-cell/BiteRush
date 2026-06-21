@@ -1,0 +1,238 @@
+<html>
+<head>
+<style>
+       body
+	   {
+            background:#f5f5f5;
+		 font-family:'Poppins',sans-serif;
+	    }
+	 .restraugrid
+	 {
+	       display:grid;
+	       grid-template-columns:repeat(3,1fr);
+	       gap:35px;
+		 max-width:1200px;
+	       margin:auto;
+	 }
+	 .restraucards
+	 {
+	      background:white;
+		 border-radius:20px;
+		  box-shadow:0 8px 25px rgba(0,0,0,0.12);
+		  cursor:pointer;
+		  overflow:hidden;
+		  transition:all .35s ease;
+	 }
+	 .restraucards:hover img{
+	  transform:scale(1.08);
+	  }
+	  .restraucards:hover
+	  {
+	  transform:translateY(-6px);
+        box-shadow:0 18px 40px rgba(0,0,0,0.18);
+	}
+	 .restraucards img
+	 {
+	 width:100%;
+	  height:250px;
+	   object-fit:cover;
+	    transition:.6s;
+	 }
+	  .details{
+	 padding:18px;
+	 }
+	 .toprow
+	 {
+	  display:flex;
+	    justify-content:space-between;
+	 }
+	.name{
+	 font-size:27px;
+      font-weight:700;
+	}
+	.rating
+	{
+	 background:#0f7a3f;
+	 border-radius:10px;
+	 color:white;
+	 padding:5px 12px;
+	 font-weight:700;
+	}
+	 .cuisine
+	 {
+	 display:flex;
+	  justify-content:space-between;
+	  color:#666;
+        margin-top:8px;
+        font-size:15px;
+	 }
+	 .location
+	 {
+	 margin-top:10px;
+       color:#888;
+	   ont-size:14px;
+	 }
+	.bottom
+	{
+	margin-top:12px;
+	display:flex;
+	justify-content:space-between;
+	}
+     .status
+	 {
+	  color: #10B981;
+        font-weight:600;
+	 }
+	 .distance
+	 {
+	  font-weight:600;
+	  color:black;
+	 }
+</style>
+</head>
+<body>
+       <div class="restraugrid" >
+	   <!--restrau 01-->
+	       <div class ="restraucards" id ="r01"> 
+		   <img src ="r02.jpg">
+		   <div class="details">
+		       <div class="toprow">
+			    <div class="name">The Golden Spoon</div>
+                     <div class="rating">4.6 ★</div>
+			</div>
+			<div>
+			        <div class="cuisine">
+                             North Indian, Salad, Oriental...
+                        <span class="price">₹1,900 for two</span>
+                        </div>
+                          <div class="location">
+                             Sakchi,Jamshedpur
+                         </div>
+                         <div class="bottom">
+                             <div class="status">Opens between 8 am to 10pm</div>
+                             <div class="distance">374 m</div>
+                        </div>
+			</div>
+		   </div>
+		   </div>
+		   <!--restrau 02-->
+		 <div class ="restraucards" id="r02">
+		      <img src ="r04.jpg">
+		   <div class="details">
+		       <div class="toprow">
+			    <div class="name">Aurum Dining</div>
+                     <div class="rating">4.3 ★</div>
+			</div>
+			<div>
+			        <div class="cuisine">
+                              North Indian, Mughlai, Biryani...
+                        <span class="price">₹2,500 for two</span>
+                        </div>
+                          <div class="location">
+                             Bistupur,Jamshedpur
+                         </div>
+                         <div class="bottom">
+                             <div class="status">Opens between 12 pm to 9pm</div>
+                             <div class="distance">424 m</div>
+                        </div>
+			</div>
+		   </div>
+		 </div>
+		 <!--restrau 03-->
+		 <div class ="restraucards" id="r03">
+		 <img src ="r03.jpg">
+		   <div class="details">
+		       <div class="toprow">
+			    <div class="name">The Downtown Cafe</div>
+                     <div class="rating">4.2 ★</div>
+			</div>
+			<div>
+			        <div class="cuisine">
+                               Coffee, Chinese, Snacks...
+                        <span class="price">₹500 for two</span>
+                        </div>
+                          <div class="location">
+                             Adityapur,Jamshedpur
+                         </div>
+                         <div class="bottom">
+                             <div class="status">Opens between 12 pm to 8pm</div>
+                             <div class="distance">512 m</div>
+                        </div>
+			</div>
+		   </div>
+		 </div>
+	 </div>
+	 <!--2nd row of restraus-->
+	  <div class="restraugrid" style="margin-top:60px"; >
+	   <!--restrau 04-->
+	       <div class ="restraucards" id ="r04"> 
+		   <img src ="r06.jpg">
+		   <div class="details">
+		       <div class="toprow">
+			    <div class="name">Crimson Table</div>
+                     <div class="rating">4.1 ★</div>
+			</div>
+			<div>
+			        <div class="cuisine">
+                             North Indian, Oriental, Mocktails...
+                        <span class="price">₹2,100 for two</span>
+                        </div>
+                          <div class="location">
+                             Sakchi,Jamshedpur
+                         </div>
+                         <div class="bottom">
+                             <div class="status">Opens between 12 pm to 8pm</div>
+                             <div class="distance">312 m</div>
+                        </div>
+			</div>
+		   </div>
+		   </div>
+		   <!--restrau 05-->
+		 <div class ="restraucards" id="r05">
+		      <img src ="r08.jpg">
+		   <div class="details">
+		       <div class="toprow">
+			    <div class="name">Velvet Flame</div>
+                     <div class="rating">4.1 ★</div>
+			</div>
+			<div>
+			        <div class="cuisine">
+                              North Indian, Biryani, South Indian...
+                        <span class="price">₹2,000 for two</span>
+                        </div>
+                          <div class="location">
+                             Bistupur,Jamshedpur
+                         </div>
+                         <div class="bottom">
+                             <div class="status">Opens between 1 pm to 10pm</div>
+                             <div class="distance">353 m</div>
+                        </div>
+			</div>
+		   </div>
+		 </div>
+		 <!--restrau 06-->
+		 <div class ="restraucards" id="r06">
+		 <img src ="r07.jpg">
+		   <div class="details">
+		       <div class="toprow">
+			    <div class="name">The Ember House</div>
+                     <div class="rating">4.0★</div>
+			</div>
+			<div>
+			        <div class="cuisine">
+                               Chinese, Mexican, Snacks...
+                        <span class="price">₹1500 for two</span>
+                        </div>
+                          <div class="location">
+                             Golmuri,Jamshedpur
+                         </div>
+                         <div class="bottom">
+                             <div class="status">Opens between 11 pm to 10pm</div>
+                             <div class="distance">434 m</div>
+                        </div>
+			</div>
+		   </div>
+		 </div>
+	 </div>
+</body>
+</html>
